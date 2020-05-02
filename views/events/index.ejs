@@ -2,9 +2,27 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+function myFunction(){
+  document.getElementById("left").style.display ="block";
+}
+function hide(){
+  document.getElementById("left").style.display ="none";
+}
+  </script>
+
 </head>
-<body>
+<body onload="hide()">
 <div class="contaner">
+
+  <div id="left">
+    <div class="in">
+      <a href="/events/new" class="add">Add Event</a>
+      
+    </div>
+  </div>
+
+  <div class =" right">
 <div class="month">      
   <ul>
     <li class="prev">&#10094;</li>
@@ -27,39 +45,39 @@
 </ul>
 
 <ul class="days">  
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li><div class="active">10</div></li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li><a href = "/events/new">29</a></li>
-  <li>30</li>
-  <li>31</li>
+  <li><button onclick="myFunction()" class="btn">1</button></li>
+  <li ><button onclick="myFunction()" class="btn">2</button></li>
+  <li ><button onclick="myFunction()" class="btn">3</button></li>
+  <li ><button onclick="myFunction()" class="btn">4</button></li>
+  <li ><button onclick="myFunction()" class="btn">5</button></li>
+  <li ><button onclick="myFunction()" class="btn">6</button></li>
+  <li ><button onclick="myFunction()" class="btn">7</button></li>
+  <li ><button onclick="myFunction()" class="btn">8</button></li>
+  <li ><button onclick="myFunction()" class="btn">9</button></li>
+  <li ><button onclick="myFunction()" class="btn"><div class="active">10</div></button></li>
+  <li ><button onclick="myFunction()" class="btn">11</button></li>
+  <li ><button onclick="myFunction()" class="btn">12</button></li>
+  <li ><button onclick="myFunction()" class="btn">13</button></li>
+  <li ><button onclick="myFunction()" class="btn">14</button></li>
+  <li ><button onclick="myFunction()" class="btn">15</button></li>
+  <li ><button onclick="myFunction()" class="btn">16</button></li>
+  <li ><button onclick="myFunction()" class="btn">17</button></li>
+  <li ><button onclick="myFunction()" class="btn">18</button></li>
+  <li ><button onclick="myFunction()" class="btn">19</button></li>
+  <li ><button onclick="myFunction()" class="btn">20</button></li>
+  <li ><button onclick="myFunction()" class="btn">21</button></li>
+  <li ><button onclick="myFunction()" class="btn">22</button></li>
+  <li ><button onclick="myFunction()" class="btn">23</button></li>
+  <li ><button onclick="myFunction()" class="btn">24</button></li>
+  <li ><button onclick="myFunction()" class="btn">25</button></li>
+  <li ><button onclick="myFunction()" class="btn">26</button></li>
+  <li ><button onclick="myFunction()" class="btn">27</button></li>
+  <li ><button onclick="myFunction()" class="btn">28</button></li>
+  <li ><button onclick="myFunction()" class="btn">29</button></li>
+  <li ><button onclick="myFunction()" class="btn">30</button></li>
+  <li ><button onclick="myFunction()" class="btn">31</button></li>
 </ul>
 </div>
-
+</div>
 </body>
 </html>

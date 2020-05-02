@@ -1,32 +1,27 @@
 
-const mongoose = require("mpngoose");
+const mongoose = require("mongoose");
 
-const calendarSchema = new mongoose.Schem({
+const calendarSchema = new mongoose.Schema({
 
-    nameOfEvent:{
+    name:{
         type: String ,
         required :true
     },
-    startTime :{
+    Stime :{
         type: String ,
         required :true
     },
-    endTime :{
+   
+    Etime :{
         type: String ,
         required :true
     },
-    startAMPM:{
-        type: String ,
-        required :true 
-    },
-    endAMPM:{
+    tage :{
         type: String ,
         required :true
-    },
-    day :{
-        type:Date ,
-        default: Date.now
     }
-  
 })
+
+module.exports = mongoose.model('Event', calendarSchema);
+
 

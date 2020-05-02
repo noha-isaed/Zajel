@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <style>* {box-sizing: border-box;}
-      body {font-family: Verdana, sans-serif; background-image: url();}
+      body {font-family: Verdana, sans-serif; background-image: url();   background-color: #777;}
       .contaner{
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           border-radius: 3%;
@@ -12,6 +12,7 @@
           padding: 20px;
           width: 25%;
           min-width: 300px;
+          background-image: url('image.jpg');  
           
       }
       .save {
@@ -47,6 +48,7 @@
       .Form{
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           border-radius: 8px;
+          border-style: ridge;
           background-color: rrgb(236, 235, 235); 
           margin-bottom: 10px;
           font-family: Raleway;
@@ -63,26 +65,20 @@
           width: 100%;
           min-width: 300px;  
       }
+      label{
+        margin-bottom: 5px;
+        margin-left: 10px;
+      }
       
       </style>
 </head>
 <body>
   <div class="contaner">
       <a href="/" class="close">CLOSE ✖</a>
-      <form id="addEvent">
-        <input placeholder="Event name" type="text" name="name" class="Form">
-        <input type="time"   min="09:00" max="18:00" class="Form">
-        <textarea placeholder="Notes" name="notes" cols="30" rows="5"></textarea>
-        <select name="tags" class="Form">
-          <option value="event">event</option>
-          <option value="important">important</option>
-          <option value="birthday">birthday</option>
-          <option value="festivity">festivity</option>
-        </select>
-      </form>
-      <br>
-      <button type="submit" class="save">SAVE</button>
-    </div>
       
+      <form action="/saved" method="post" id="addEvent" >
+        <%- include('_form_fields')%>
+      </form>
+    </div>
         </body>
         </html>
