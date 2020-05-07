@@ -2,34 +2,18 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/styles.css">
-  <script>
-function myFunction(){
-  document.getElementById("left").style.display ="block";
-}
-function hide(){
-  document.getElementById("left").style.display ="none";
-}
-  </script>
-
 </head>
-<body onload="hide()">
-<div class="contaner">
-
-  <div id="left">
-    <div class="in">
-      <a href="/events/new" class="add">Add Event</a>
-      
-    </div>
-  </div>
-
+<body>
+<div class="contaner" style="margin-right: 200px;">
   <div class =" right">
-<div class="month">      
+<div class="month">    
+  <a href="/events/new" class="add">Add Event</a>  
   <ul>
     <li class="prev">&#10094;</li>
     <li class="next">&#10095;</li>
     <li>
-      August<br>
-      <span style="font-size:18px">2017</span>
+      August </h1><br>
+      <span style="font-size:18px">2020</span>
     </li>
   </ul>
 </div>
@@ -44,38 +28,42 @@ function hide(){
   <li>Su</li>
 </ul>
 
-<ul class="days">  
-  <li><button onclick="myFunction()" class="btn">1</button></li>
-  <li ><button onclick="myFunction()" class="btn">2</button></li>
-  <li ><button onclick="myFunction()" class="btn">3</button></li>
-  <li ><button onclick="myFunction()" class="btn">4</button></li>
-  <li ><button onclick="myFunction()" class="btn">5</button></li>
-  <li ><button onclick="myFunction()" class="btn">6</button></li>
-  <li ><button onclick="myFunction()" class="btn">7</button></li>
-  <li ><button onclick="myFunction()" class="btn">8</button></li>
-  <li ><button onclick="myFunction()" class="btn">9</button></li>
-  <li ><button onclick="myFunction()" class="btn"><div class="active">10</div></button></li>
-  <li ><button onclick="myFunction()" class="btn">11</button></li>
-  <li ><button onclick="myFunction()" class="btn">12</button></li>
-  <li ><button onclick="myFunction()" class="btn">13</button></li>
-  <li ><button onclick="myFunction()" class="btn">14</button></li>
-  <li ><button onclick="myFunction()" class="btn">15</button></li>
-  <li ><button onclick="myFunction()" class="btn">16</button></li>
-  <li ><button onclick="myFunction()" class="btn">17</button></li>
-  <li ><button onclick="myFunction()" class="btn">18</button></li>
-  <li ><button onclick="myFunction()" class="btn">19</button></li>
-  <li ><button onclick="myFunction()" class="btn">20</button></li>
-  <li ><button onclick="myFunction()" class="btn">21</button></li>
-  <li ><button onclick="myFunction()" class="btn">22</button></li>
-  <li ><button onclick="myFunction()" class="btn">23</button></li>
-  <li ><button onclick="myFunction()" class="btn">24</button></li>
-  <li ><button onclick="myFunction()" class="btn">25</button></li>
-  <li ><button onclick="myFunction()" class="btn">26</button></li>
-  <li ><button onclick="myFunction()" class="btn">27</button></li>
-  <li ><button onclick="myFunction()" class="btn">28</button></li>
-  <li ><button onclick="myFunction()" class="btn">29</button></li>
-  <li ><button onclick="myFunction()" class="btn">30</button></li>
-  <li ><button onclick="myFunction()" class="btn">31</button></li>
+<ul class="days"> 
+  <li><form action="/getEvent" method="get">
+    <button type="submit"  class="btn" >1</button>
+  </form></li> 
+  <li><form action="/getEvent" method="get">
+    <button type="submit"  class="btn" >2</button>
+  </form></li> 
+  <li ><button class="btn">3</button></li>
+  <li ><button class="btn">4</button></li>
+  <li ><button class="btn">5</button></li>
+  <li ><button class="btn">6</button></li>
+  <li ><button class="btn">7</button></li>
+  <li ><button class="btn">8</button></li>
+  <li ><button class="btn">9</button></li>
+  <li ><button class="btn"><div class="active">10</div></button></li>
+  <li ><button class="btn">11</button></li>
+  <li ><button class="btn">12</button></li>
+  <li ><button class="btn">13</button></li>
+  <li ><button class="btn">14</button></li>
+  <li ><button class="btn">15</button></li>
+  <li ><button class="btn">16</button></li>
+  <li ><button class="btn">17</button></li>
+  <li ><button class="btn">18</button></li>
+  <li ><button class="btn">19</button></li>
+  <li ><button class="btn">20</button></li>
+  <li ><button class="btn">21</button></li>
+  <li ><button class="btn">22</button></li>
+  <li ><button class="btn">23</button></li>
+  <li ><button class="btn">24</button></li>
+  <li ><button class="btn">25</button></li>
+  <li ><button class="btn">26</button></li>
+  <li ><button class="btn">27</button></li>
+  <li ><button class="btn">28</button></li>
+  <li ><button class="btn">29</button></li>
+  <li ><button class="btn">30</button></li>
+  <li ><button class="btn">31</button></li>
 </ul>
 </div>
 </div>

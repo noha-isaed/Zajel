@@ -1,5 +1,5 @@
 {
-  "name":"Zajel",
+  "name": "Zajel",
   "version": "1.0.0",
   "description": "",
   "main": "zajel.js",
@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "^3.1.2",
     "express": "^4.17.1",
     "googleapis": "^39.2.0",
     "mongodb": "^3.5.7",
-    "mongoose": "^5.9.10"
+    "mongoose": "^5.9.10",
+    "pug": "^2.0.4"
   }
 }
